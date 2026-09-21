@@ -1,4 +1,477 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PiSUN | $PISUN on Solana</title><meta name="description" content="PiSUN — The Sun Never Sets. Pi Never Ends. Community-powered memecoin on Solana."><style>
-:root{--gold:#f5b942;--gold2:#ffe39a;--bg:#050505;--panel:#101010;--muted:#aaa}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% 0,#3b2605 0,#090909 34%,#000 72%);color:#fff;font-family:Inter,Arial,sans-serif}.wrap{max-width:1100px;margin:auto;padding:28px}.nav{display:flex;justify-content:space-between;align-items:center}.brand{font-weight:900;font-size:24px;color:var(--gold2)}.nav a{color:#ddd;text-decoration:none;margin-left:20px}.hero{text-align:center;padding:70px 0 55px}.logo{width:210px;max-width:55vw;border-radius:50%;filter:drop-shadow(0 0 28px #b56f00)}h1{font-size:clamp(48px,9vw,92px);margin:20px 0 4px;background:linear-gradient(#fff3bf,#d58a00);-webkit-background-clip:text;color:transparent}.tag{font-size:clamp(20px,3vw,30px);font-weight:700}.sub{color:#bbb;max-width:650px;margin:14px auto 28px;line-height:1.6}.buttons{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}.btn{padding:14px 20px;border-radius:999px;text-decoration:none;font-weight:800;border:1px solid #73500d;color:#fff;background:#15110a}.btn.primary{background:linear-gradient(135deg,#ffd66b,#b56b00);color:#100b00}.section{padding:35px 0}.section h2{text-align:center;font-size:34px;color:var(--gold2)}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{background:linear-gradient(180deg,#151515,#090909);border:1px solid #49340d;border-radius:20px;padding:24px;text-align:center}.card b{font-size:26px;color:var(--gold)}.ca{background:#0d0d0d;border:1px solid #49340d;border-radius:18px;padding:18px;text-align:center;overflow-wrap:anywhere}.ca code{color:#ffe09a}.copy{margin-top:12px;background:#d8961b;border:0;padding:10px 16px;border-radius:12px;font-weight:800;cursor:pointer}.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.fact{padding:22px;border:1px solid #49340d;background:#0b0b0b;border-radius:18px;text-align:center}.warn{color:#aaa;line-height:1.6;text-align:center;max-width:800px;margin:auto}footer{text-align:center;color:#777;padding:45px 0 25px}@media(max-width:750px){.grid{grid-template-columns:repeat(2,1fr)}.facts{grid-template-columns:1fr}.nav .links{display:none}}
-</style></head><body><div class="wrap"><nav class="nav"><div class="brand">☀️ PiSUN</div><div class="links"><a href="#tokenomics">Tokenomics</a><a href="#contract">Contract</a><a href="https://x.com/PiSUNcoin">X</a><a href="https://t.me/PiSUNofficial">Telegram</a></div></nav><main class="hero"><img class="logo" src="pisun-logo.png" alt="PiSUN logo"><h1>PiSUN</h1><div class="tag">The Sun Never Sets. Pi Never Ends. ☀️π</div><p class="sub">A community-powered memecoin on Solana with a permanently fixed supply of 3,141,592,653 PISUN.</p><div class="buttons"><a class="btn primary" href="https://raydium.io/swap/?inputMint=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&outputMint=8tzYhprxJyUF5tnvVeRUJosUsTUm6QgrheS1zwidT688" target="_blank">BUY PISUN</a><a class="btn" href="https://dexscreener.com/search?q=8tzYhprxJyUF5tnvVeRUJosUsTUm6QgrheS1zwidT688" target="_blank">DEXSCREENER</a><a class="btn" href="https://x.com/PiSUNcoin" target="_blank">X / TWITTER</a><a class="btn" href="https://t.me/PiSUNofficial" target="_blank">TELEGRAM</a></div></main><section class="section" id="contract"><h2>Official Contract</h2><div class="ca"><code id="ca">8tzYhprxJyUF5tnvVeRUJosUsTUm6QgrheS1zwidT688</code><br><button class="copy" onclick="navigator.clipboard.writeText(document.getElementById('ca').innerText);this.innerText='COPIED ✓'">COPY CA</button></div></section><section class="section"><h2>Token Facts</h2><div class="facts"><div class="fact"><b>3,141,592,653</b><br>Fixed Supply</div><div class="fact"><b>Revoked</b><br>Mint Authority</div><div class="fact"><b>Revoked</b><br>Freeze Authority</div></div></section><section class="section" id="tokenomics"><h2>Tokenomics</h2><div class="grid"><div class="card"><b>80%</b><p>Liquidity / Public Reserve</p><small>2,513,274,122.4 PISUN</small></div><div class="card"><b>10%</b><p>Community</p><small>314,159,265.3 PISUN</small></div><div class="card"><b>5%</b><p>Marketing</p><small>157,079,632.65 PISUN</small></div><div class="card"><b>5%</b><p>Team</p><small>157,079,632.65 PISUN</small></div></div></section><section class="section"><h2>Trade Carefully</h2><p class="warn">PiSUN is a memecoin and crypto assets are highly volatile. Liquidity may be limited and prices can move sharply. Nothing on this site is financial advice. Always verify the official contract address before interacting with the token.</p></section></div><footer>© 2026 PiSUN ☀️ · Meme · Community · Solana</footer></body></html>
-<a href="https://www.geckoterminal.com/solana/pools/CPKk7jMyzTUgDdoyuLdjbh9stQhfuvnj6sR7XiG3SeJA" target="_blank" rel="noopener">GeckoTerminal</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PiSUN ($PISUN) | Solana Community Memecoin</title>
+
+  <meta
+    name="description"
+    content="PiSUN ($PISUN) is a community-focused memecoin on Solana. The Sun Never Sets. Pi Never Ends."
+  >
+
+  <meta name="theme-color" content="#050505">
+
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #050505;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 7%;
+  border-bottom: 1px solid #282000;
+  position: sticky;
+  top: 0;
+  background: #050505;
+  z-index: 10;
+}
+
+.brand {
+  color: #ffd700;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.navlinks a {
+  margin-left: 20px;
+  color: #dddddd;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.logo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: 64px;
+  color: #ffd700;
+}
+
+.ticker {
+  font-size: 25px;
+  color: #ffb800;
+  font-weight: bold;
+}
+
+.slogan {
+  font-size: 22px;
+  color: #dddddd;
+  margin: 15px 0 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 22px;
+  border: 1px solid #ffd700;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #ffd700;
+  color: #000000;
+}
+
+.btn-main {
+  background: #ffd700;
+  color: #000000;
+}
+
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 70px 20px;
+}
+
+h2 {
+  color: #ffd700;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.card {
+  background: #101010;
+  border: 1px solid #2c2500;
+  border-radius: 16px;
+  padding: 25px;
+}
+
+.about {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  color: #dddddd;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 15px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat strong {
+  display: block;
+  color: #ffd700;
+  font-size: 27px;
+}
+
+.contract {
+  word-break: break-all;
+  font-family: monospace;
+  text-align: center;
+  color: #ffd700;
+}
+
+.security {
+  text-align: center;
+}
+
+.security p {
+  margin: 8px 0;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+footer {
+  border-top: 1px solid #282000;
+  text-align: center;
+  padding: 35px 20px;
+  color: #888888;
+}
+
+.warning {
+  margin-top: 25px;
+  color: #777777;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  .navlinks {
+    display: none;
+  }
+
+  .logo {
+    width: 145px;
+    height: 145px;
+  }
+}
+      </style>
+</head>
+
+<body>
+
+<nav>
+  <div class="brand">☀️ PiSUN</div>
+
+  <div class="navlinks">
+    <a href="#about">About</a>
+    <a href="#tokenomics">Tokenomics</a>
+    <a href="#contract">Contract</a>
+    <a href="#community">Community</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div>
+
+    <img src="pisun-logo.png" class="logo" alt="PiSUN Logo">
+
+    <h1>PiSUN</h1>
+
+    <div class="ticker">
+      $PISUN • SOLANA
+    </div>
+
+    <div class="slogan">
+      The Sun Never Sets. Pi Never Ends. ☀️π
+    </div>
+
+    <div class="buttons">
+
+      <a
+        class="btn btn-main"
+        href="https://raydium.io/swap/?inputMint=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&outputMint=8tzYhprxJyUF5tnvVeRUJosUsTUm6QgrheS1zwidT688"
+        target="_blank"
+        rel="noopener"
+      >
+        BUY PISUN
+      </a>
+
+      <a
+        class="btn"
+        href="https://www.geckoterminal.com/solana/pools/CPKK7jMyzTUgDdoyuLdjbh9stQhfunvj6sR7XiG3SeJA"
+        target="_blank"
+        rel="noopener"
+      >
+        GeckoTerminal
+      </a>
+
+    </div>
+
+  </div>
+</div>
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div class="brand">☀️ PiSUN</div>
+
+  <div class="navlinks">
+    <a href="#about">About</a>
+    <a href="#tokenomics">Tokenomics</a>
+    <a href="#contract">Contract</a>
+    <a href="#community">Community</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div>
+
+    <img src="pisun-logo.png" class="logo" alt="PiSUN Logo">
+
+    <h1>PiSUN</h1>
+
+    <div class="ticker">
+      $PISUN • SOLANA
+    </div>
+
+    <div class="slogan">
+      The Sun Never Sets. Pi Never Ends. ☀️π
+    </div>
+
+    <div class="buttons">
+
+      <a
+        class="btn btn-main"
+        href="https://raydium.io/swap/?inputMint=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&outputMint=8tzYhprxJyUF5tnvVeRUJosUsTUm6QgrheS1zwidT688"
+        target="_blank"
+        rel="noopener"
+      >
+        BUY PISUN
+      </a>
+
+      <a
+        class="btn"
+        href="https://www.geckoterminal.com/solana/pools/CPKK7jMyzTUgDdoyuLdjbh9stQhfunvj6sR7XiG3SeJA"
+        target="_blank"
+        rel="noopener"
+      >
+        GeckoTerminal
+      </a>
+
+    </div>
+
+  </div>
+</div>
+<section id="about">
+  <h2>About PiSUN</h2>
+
+  <div class="card about">
+    PiSUN ($PISUN) is a community-focused memecoin built on the Solana blockchain.
+
+    <br><br>
+
+    Inspired by the endless nature of π and the energy of the sun,
+    PiSUN combines meme culture, community and blockchain.
+
+    <br><br>
+
+    <strong>☀️ The Sun Never Sets. Pi Never Ends. π</strong>
+  </div>
+</section>
+
+
+<section>
+  <h2>Token Facts</h2>
+
+  <div class="grid">
+
+    <div class="card stat">
+      <strong>3,141,592,653</strong>
+      Total Supply
+    </div>
+
+    <div class="card stat">
+      <strong>6</strong>
+      Decimals
+    </div>
+
+    <div class="card stat">
+      <strong>Solana</strong>
+      Network
+    </div>
+
+    <div class="card stat">
+      <strong>PISUN / USDC</strong>
+      Raydium Pool
+    </div>
+
+  </div>
+</section>
+
+
+<section id="tokenomics">
+  <h2>Tokenomics</h2>
+
+  <div class="grid">
+
+    <div class="card stat">
+      <strong>80%</strong>
+      Liquidity & Public
+    </div>
+
+    <div class="card stat">
+      <strong>10%</strong>
+      Community
+    </div>
+
+    <div class="card stat">
+      <strong>5%</strong>
+      Marketing
+    </div>
+
+    <div class="card stat">
+      <strong>5%</strong>
+      Team
+    </div>
+
+  </div>
+</section>
+
+
+<section id="contract">
+  <h2>Official Contract</h2>
+
+  <div class="card contract">
+    8tzYhprxJyUF5tnvVeRUJosUsTUm6QgrheS1zwidT688
+  </div>
+</section>
+<section>
+  <h2>Token Security</h2>
+
+  <div class="card security">
+    <p>✓ Fixed Total Supply</p>
+    <p>✓ Mint Authority Revoked</p>
+    <p>✓ Freeze Authority Revoked</p>
+    <p>✓ Publicly Traded on Raydium</p>
+    <p>✓ On-chain Solana Token</p>
+  </div>
+</section>
+
+
+<section id="community">
+  <h2>Official Links</h2>
+
+  <div class="links">
+
+    <a
+      class="btn"
+      href="https://x.com/PiSUNcoin"
+      target="_blank"
+      rel="noopener"
+    >
+      X / Twitter
+    </a>
+
+    <a
+      class="btn"
+      href="https://t.me/PiSUNofficial"
+      target="_blank"
+      rel="noopener"
+    >
+      Telegram
+    </a>
+
+    <a
+      class="btn"
+      href="https://www.geckoterminal.com/solana/pools/CPKK7jMyzTUgDdoyuLdjbh9stQhfunvj6sR7XiG3SeJA"
+      target="_blank"
+      rel="noopener"
+    >
+      GeckoTerminal
+    </a>
+
+    <a
+      class="btn"
+      href="https://dexscreener.com/solana/CPKK7jMyzTUgDdoyuLdjbh9stQhfunvj6sR7XiG3SeJA"
+      target="_blank"
+      rel="noopener"
+    >
+      DexScreener
+    </a>
+
+  </div>
+
+  <div class="warning">
+    PiSUN is a community memecoin. Cryptocurrency involves risk.
+    Always do your own research.
+  </div>
+</section>
+
+
+<footer>
+  ☀️ PiSUN ($PISUN) • Solana
+  <br>
+  The Sun Never Sets. Pi Never Ends. π
+</footer>
+
+</body>
+</html>
